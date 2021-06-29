@@ -1,0 +1,77 @@
+---
+title: "Stats with R"
+author: "futureCoders"
+date: "10/06/2021"
+output: html_document
+---
+
+R is a powerful statistical tool used frequently in science academia. Similar to Python, to use R effectively, we must use a variety of libraries.
+Run the cell blocks below to install and load the necessary packages 
+```{r}
+install.packages("tidyverse")
+install.packages("ggplot2")
+
+```
+
+```{r}
+library("tidyverse")
+library("ggplot2")
+```
+
+Today we will be analysing the happiness data. 
+Please download the happiness data onto your computer from: ....
+Edit and run the code cell below to load the data. 
+
+```{r}
+# first we need to set our working directory (where our files are stored)
+# change the text within the "" to the path of your computer where the file is stored - for example: setwd("~/Desktop") OR above click session > set working directory > choose directory 
+
+setwd("/path/to/my/directory")
+
+# whilst in python we set variables using '=' in r we use '<-' 
+# Here we are reading the data into a variable 
+df <- read_csv("happiness_2015.csv")
+
+# like python we can use head to look at the first few rows of the dataset
+head(df)
+
+# summary() will show you a summary of the data 
+summary(df)
+```
+
+*Lets have a look at the data*
+```{r}
+
+# We can use the arrange() function to sort the data
+
+arranged_happiness_rank <- arrange(df, happiness_rank)
+
+arranged_happiness_rank
+
+# We can use the select() function to look at specific columns
+
+score_country <- select(df, happiness_score, country)
+
+score_country
+
+# Now have a go looking at the data in different ways:
+
+### TYPE CODE BELOW ###
+
+
+
+### TYPE CODE ABOVE ###
+```
+*Now, we need to prepare our data.*
+
+```{r}
+# first lets check for any null values
+
+is.na(df)
+
+# now lets prep the data
+
+
+
+
+```
