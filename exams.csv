@@ -1,4 +1,4 @@
-"gender","race/ethnicity","parental level of education","lunch","test preparation course","math score","reading score","writing score"
+"gender","ethnicity","parental_education","lunch","preparation_course","math_score","reading_score","writing_score"
 "female","group E","some college","free/reduced","none","65","76","71"
 "male","group C","some college","standard","completed","75","72","69"
 "female","group B","some high school","free/reduced","completed","62","56","61"
