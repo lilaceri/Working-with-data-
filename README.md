@@ -1,4 +1,4 @@
 # Working-with-data-
 Data Analysis with Python
 
-This repository is all the materials I have edited/created etc in prep for the Code Division courses 
+This repository contains materials I have developed for teaching Code Division courses 
